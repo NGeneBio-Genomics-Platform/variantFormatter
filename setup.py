@@ -44,9 +44,10 @@ setup(
           "sequencevariants",
       ],
 
-	# List run-time dependencies here.  These will be installed by pip when the project is installed.
+    # List run-time dependencies here.  These will be installed by pip when the project is installed.
     install_requires=[
         "VariantValidator >= 1.0.0", # This will install BioPython
+        "hgvs==1.3.0.post0"
     ],
 )
 
