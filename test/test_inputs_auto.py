@@ -658,7 +658,7 @@ class TestVariantsAuto(object):
 		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.5']['p_hgvs_slc'] == 'NP_061187.3:p.(Q507_Q510del)'
 		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.5']['transcript_variant_error'] is None
 		assert 'NM_018717.4' in results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p'].keys()
-		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.4']['t_hgvs'] == 'NM_018717.4:c.1466_1468='
+		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.4']['t_hgvs'] == 'NM_018717.4:c.1467_1468='
 		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.4']['p_hgvs_tlc'] == 'NP_061187.2:p.(Gln489=)'
 		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.4']['p_hgvs_slc'] == 'NP_061187.2:p.(Q489=)'
 		assert results['NC_000004.11:g.140811111_140811122del']['hgvs_t_and_p']['NM_018717.4']['transcript_variant_error'] is None
@@ -5680,7 +5680,7 @@ class TestVariantsAuto(object):
 		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NM_012309.3']['t_hgvs'] is None
 		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NM_012309.3']['p_hgvs_tlc'] is None
 		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NM_012309.3']['p_hgvs_slc'] is None
-		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NM_012309.3']['transcript_variant_error'] == 'start or end or both are beyond the bounds of transcript record'
+		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NM_012309.3']['transcript_variant_error'] == 'Position is beyond the bounds of transcript record'
 		assert 'NR_110766.1' in results['HG865_PATCH-33547-G-A']['hgvs_t_and_p'].keys()
 		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NR_110766.1']['t_hgvs'] == 'NR_110766.1:n.833+969C>T'
 		assert results['HG865_PATCH-33547-G-A']['hgvs_t_and_p']['NR_110766.1']['p_hgvs_tlc'] == 'non-coding'
@@ -5712,7 +5712,7 @@ class TestVariantsAuto(object):
 		assert results['HG865_PATCH-569441-G-T']['hgvs_t_and_p']['NM_012309.3']['t_hgvs'] is None
 		assert results['HG865_PATCH-569441-G-T']['hgvs_t_and_p']['NM_012309.3']['p_hgvs_tlc'] is None
 		assert results['HG865_PATCH-569441-G-T']['hgvs_t_and_p']['NM_012309.3']['p_hgvs_slc'] is None
-		assert results['HG865_PATCH-569441-G-T']['hgvs_t_and_p']['NM_012309.3']['transcript_variant_error'] == 'start or end or both are beyond the bounds of transcript record'
+		assert results['HG865_PATCH-569441-G-T']['hgvs_t_and_p']['NM_012309.3']['transcript_variant_error'] == 'Position is beyond the bounds of transcript record'
 
 
 	def test_variant188(self):
@@ -5734,7 +5734,7 @@ class TestVariantsAuto(object):
 		assert results['HG865_PATCH-574546-C-T']['hgvs_t_and_p']['NM_012309.3']['t_hgvs'] is None
 		assert results['HG865_PATCH-574546-C-T']['hgvs_t_and_p']['NM_012309.3']['p_hgvs_tlc'] is None
 		assert results['HG865_PATCH-574546-C-T']['hgvs_t_and_p']['NM_012309.3']['p_hgvs_slc'] is None
-		assert results['HG865_PATCH-574546-C-T']['hgvs_t_and_p']['NM_012309.3']['transcript_variant_error'] == 'start or end or both are beyond the bounds of transcript record'
+		assert results['HG865_PATCH-574546-C-T']['hgvs_t_and_p']['NM_012309.3']['transcript_variant_error'] == 'Position is beyond the bounds of transcript record'
 
 
 	def test_variant189(self):
